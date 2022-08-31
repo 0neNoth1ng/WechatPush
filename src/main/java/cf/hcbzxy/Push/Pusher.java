@@ -24,8 +24,8 @@ public class Pusher {
 
     @Scheduled(cron = "0 0 8 * * ?") // 每天早上八点准时发
     public void Go() throws ParseException {
-        push(hcb, "oBGE1t7J_pS4y2yHsMWEoYcTDzlSsFcrGkj14Ss_m8k");
-        push(zxy, "oBGE1t7J_pS4y2yHsMWEoYcTDzlSsFcrGkj14Ss_m8k");
+        push(hcb, "fXnvUN7gvW2AYEsJ5V3r9NosFxabdI_6afIU6XC-inA");
+        push(zxy, "fXnvUN7gvW2AYEsJ5V3r9NosFxabdI_6afIU6XC-inA");
     }
 
     private static String appId = "wxf6619c0aea6ce00f";

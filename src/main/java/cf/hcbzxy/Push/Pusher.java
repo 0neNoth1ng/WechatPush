@@ -22,9 +22,10 @@ public class Pusher {
     static String hcb = "ocsDd6nQgMrwQwp4RouDIRDktuq8";
     static String zxy = "ocsDd6rDU4jXIFGyf3jSYOA0q1Ec";
 
-    @Scheduled(cron = "0/30 * * * * ?")
+    @Scheduled(cron = "0 0 8 * * ?") // 每天早上八点准时发
     public void Go() throws ParseException {
         push(hcb, "oBGE1t7J_pS4y2yHsMWEoYcTDzlSsFcrGkj14Ss_m8k");
+        push(zxy, "oBGE1t7J_pS4y2yHsMWEoYcTDzlSsFcrGkj14Ss_m8k");
     }
 
     private static String appId = "wxf6619c0aea6ce00f";

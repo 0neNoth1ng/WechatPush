@@ -11,7 +11,7 @@ public class tianqi {
 
     public static String[] request() {
         //java环境中文传值时，需特别注意字符编码问题
-        String httpUrl = "https://v0.yiketianqi.com/api?unescape=1&version=v62&appid=12116879&appsecret=xsd0X8bh";
+        String httpUrl = "https://v0.yiketianqi.com/api?unescape=1&version=v62&appid=12116879&appsecret=xsd0X8bh&cityid=101200105";
 
         BufferedReader reader = null;
         String result = null;

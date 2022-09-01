@@ -26,11 +26,14 @@ public class Pusher {
     static String hcb = "ocsDd6nQgMrwQwp4RouDIRDktuq8";
     static String zxy = "ocsDd6rDU4jXIFGyf3jSYOA0q1Ec";
 
+    static String jll = "ocsDd6s6BkyApJelZ0kxchJLXQKs";
+
     @Scheduled(cron = "0 0 8 * * ?") // 每天早上八点准时发
     //@Scheduled(cron = "0/10 * * * * ?")  //测试每十秒发一次
     public void Go() throws ParseException {
         push(hcb, "fXnvUN7gvW2AYEsJ5V3r9NosFxabdI_6afIU6XC-inA");
         push(zxy, "fXnvUN7gvW2AYEsJ5V3r9NosFxabdI_6afIU6XC-inA");
+        push(jll,"fXnvUN7gvW2AYEsJ5V3r9NosFxabdI_6afIU6XC-inA");
 
     }
 

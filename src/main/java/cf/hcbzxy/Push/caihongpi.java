@@ -47,9 +47,4 @@ public class caihongpi {
 
         return strs[11];
     }
-
-    public static void main(String[] args) {
-        String request = caihongpi.request();
-
-    }
 }

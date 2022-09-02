@@ -63,23 +63,6 @@ public class Pusher {
         templateMessage.addData(new WxMpTemplateData("dianfei", dianfei, "#49E153"));
         templateMessage.addData(new WxMpTemplateData("love_day", jinianri.getJinianri(), "#FF6347"));
         templateMessage.addData(new WxMpTemplateData("caihongpi", caihongpi.request(), "#FF69B4"));
-        /*templateMessage.addData(new WxMpTemplateData("lianai",JiNianRi.getLianAi()+"","#FF1493"));
-        templateMessage.addData(new WxMpTemplateData("shengri",JiNianRi.getShengRi()+"","#FFA500"));
-        templateMessage.addData(new WxMpTemplateData("jinju",CaiHongPi.getJinJu()+"","#C71585"));
-        //templateMessage.addData(new WxMpTemplateData("jiehun",JiNianRi.getJieHun()+""));
-        templateMessage.addData(new WxMpTemplateData("linzhen",JiNianRi.getLinZhen()+"","#FF6347"));*/
-
-        /*String beizhu = "情人节快乐！";
-        if(JiNianRi.getJieHun() % 365 == 0){
-            beizhu = "今天是结婚纪念日！";
-        }
-        if(JiNianRi.getLianAi() % 365 == 0){
-            beizhu = "今天是恋爱纪念日！";
-        }
-        if(JiNianRi.getLinZhen() % 365 == 0){
-            beizhu = "今天是结婚纪念日！";
-        }
-        templateMessage.addData(new WxMpTemplateData("beizhu",beizhu,"#FF0000"));*/
 
         try {
             System.out.println(templateMessage.toJson());

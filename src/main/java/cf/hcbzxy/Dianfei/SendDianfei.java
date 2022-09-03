@@ -57,11 +57,11 @@ public class SendDianfei {
     JavaMailSender javaMailSender;
 
 
-    public void sendSimpleMail() {
+    public void sendSimpleMail(String touser) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setSubject("电费来咯");
         message.setFrom("1628880266@qq.com");
-        message.setTo("3602869979@qq.com");
+        message.setTo(touser);
         message.setSentDate(new Date());
         message.setText(getDianfei());
         javaMailSender.send(message);
@@ -69,9 +69,12 @@ public class SendDianfei {
 
 
     @Scheduled(cron = "0 0 8 * * ?") // 每天早上八点准时发
-    //@Scheduled(cron = "0 10 22 * * ?")  //测试每十秒发一次
+    //@Scheduled(cron = "0 5 23 * * ?")  //测试时间发
     public void Go(){
-        sendSimpleMail();
+        sendSimpleMail("3602869979@qq.com");
+        sendSimpleMail("1097405703@qq.com");
+        sendSimpleMail("2715373909@qq.com");
+        sendSimpleMail("1455752093@qq.com");
     }
 
 }
